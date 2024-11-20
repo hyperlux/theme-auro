@@ -1,12 +1,21 @@
 // Desktop-specific styles
-@media (min-width: 1024px) {
-  .container {
+@media (min-width: 992px) {
+  .d-header {
+    height: 70px;
+    
+    .title {
+      font-size: 1.5rem;
+    }
+    
+    .d-header-icons {
+      gap: 1rem;
+    }
+  }
+  
+  .topic-list {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
-  }
-
-  .topic-list {
+    
     .topic-list-item {
       display: grid;
       grid-template-columns: auto 150px 100px;
@@ -14,13 +23,12 @@
       align-items: center;
     }
   }
-
-  .d-header {
-    .d-header-icons {
-      gap: 1rem;
-    }
+  
+  .topic-body {
+    margin: 20px auto;
+    max-width: 1000px;
   }
-
+  
   .sidebar {
     position: sticky;
     top: 5rem;
